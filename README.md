@@ -1,4 +1,4 @@
-# PX4 EKF / UAV Navigation Estimation Project
+# EKF-PX4 / UAV Navigation Estimation Project
 
 一个面向 PX4 估计器、姿态解算和传感器融合研究的工程项目，主要用于学习和验证 EKF（Extended Kalman Filter）在无人机导航与状态估计中的应用。
 
