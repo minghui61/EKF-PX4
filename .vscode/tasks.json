@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build EKF Project (Windows)",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "main.cpp",
+                "ekf_wrapper.cpp",
+                "EKF/*.cpp",
+                "geo/geo.cpp",
+                "-I.",
+                "-I./lib",
+                "-I./lib/matrix",
+                "-I./AlphaFilter",
+                "-I./geo_lookup",
+                "-std=c++14",
+                "-o",
+                "ekf_test.exe"
+            ],
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/c"]
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
